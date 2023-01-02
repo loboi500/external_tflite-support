@@ -1,22 +1,3 @@
-load("@org_tensorflow//tensorflow:tensorflow.bzl", "pybind_extension")
-
-package(
-    default_visibility = [
-        "//tensorflow_lite_support/metadata:__subpackages__",
-    ],
-    licenses = ["notice"],  # Apache 2.0
-)
-
-pybind_extension(
-    name = "_pywrap_metadata_version",
-    srcs = [
-        "metadata_version.cc",
-    ],
-    features = ["-use_header_modules"],
-    module_name = "_pywrap_metadata_version",
-    deps = [
-        "//tensorflow_lite_support/metadata/cc:metadata_version",
-        "@org_tensorflow//tensorflow/lite/c:common",
-        "@pybind11",
-    ],
-)
+version https://git-lfs.github.com/spec/v1
+oid sha256:d26ba56cb61d3cc8447d7d1b269e8a520afe92b7c612666830306d4631263f4b
+size 577

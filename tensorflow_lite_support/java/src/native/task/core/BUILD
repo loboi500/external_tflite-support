@@ -1,16 +1,3 @@
-package(
-    default_visibility = ["//tensorflow_lite_support:users"],
-    licenses = ["notice"],  # Apache 2.0
-)
-
-# Default provider for BuiltInOpResover. Create your own target, overwrite the
-# function to provide a MutableOpResolver for customized OPs and/or a subset of
-# builtin OPs.
-cc_library(
-    name = "builtin_op_resolver",
-    srcs = ["builtin_op_resolver.cc"],
-    deps = [
-        "@org_tensorflow//tensorflow/lite:framework",
-        "@org_tensorflow//tensorflow/lite/kernels:builtin_ops",
-    ],
-)
+version https://git-lfs.github.com/spec/v1
+oid sha256:82bb5b64b154fc711bced65151984bd2a2e98d7bc92dac44f27507bc4f46894c
+size 514

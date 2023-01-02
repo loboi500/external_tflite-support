@@ -1,15 +1,3 @@
-package(
-    default_visibility = ["//tensorflow_lite_support:users"],
-    licenses = ["notice"],  # Apache 2.0
-)
-
-objc_library(
-    name = "TFLStringUtil",
-    srcs = [
-        "Sources/TFLStringUtil.mm",
-    ],
-    hdrs = [
-        "Sources/TFLStringUtil.h",
-    ],
-    module_name = "TFLStringUtil",
-)
+version https://git-lfs.github.com/spec/v1
+oid sha256:d963f2a4d3177fee519b7d86514b522408a0c4a2ab24a5ce00e768aefe5dbe76
+size 305

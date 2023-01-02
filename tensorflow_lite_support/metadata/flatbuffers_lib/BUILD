@@ -1,22 +1,3 @@
-load("@org_tensorflow//tensorflow:tensorflow.bzl", "pybind_extension")
-
-package(
-    default_visibility = [
-        "//visibility:public",
-    ],
-    licenses = ["notice"],  # Apache 2.0
-)
-
-pybind_extension(
-    name = "_pywrap_flatbuffers",
-    srcs = [
-        "flatbuffers_lib.cc",
-    ],
-    features = ["-use_header_modules"],
-    module_name = "_pywrap_flatbuffers",
-    deps = [
-        "@flatbuffers",
-        "@local_config_python//:python_headers",
-        "@pybind11",
-    ],
-)
+version https://git-lfs.github.com/spec/v1
+oid sha256:1a97d558e78a59641c506c8bad4437110709ea94f08b294362d59878bd6e2c3a
+size 489
